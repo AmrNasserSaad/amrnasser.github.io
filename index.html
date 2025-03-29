@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amr Nasser</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/95e4c26e1d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- --------header----------- -->
+    <header class="header">
+        <a href="" class="logo"><span>Amr</span> Nasser</a>
+
+        <nav class="nav-bar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Me</a>
+            <a class="down-btn" title="Download my resume"
+                href="https://drive.google.com/uc?export=download&id=1UgOIcH-VW_n_7VDq40SWxDpwUwZfvLTq">
+                Resume
+                <i class="fa-solid fa-download"></i>
+            </a>
+        </nav>
+
+        <div class="menu-icon" id="menu-icon" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- --------side menu for small screens----------- -->
+    <nav class="side-menu" id="side-menu">
+        <div class="close-btn" id="close-btn" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About Me</a>
+        <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+        <a href="#contact" onclick="closeMenu()">Contact Me</a>
+        <a class="down-btn" title="Download my resume" onclick="closeMenu()"
+            href="https://drive.google.com/uc?export=download&id=17U9gOSziWnCIV91Pjh6FGA3cnAnxWpaI">
+            Resume
+            <i class="fa-solid fa-download"></i>
+        </a>
+    </nav>
+
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+
+
+    <!-- --------home----------- -->
+    <section id="home">
+        <div class="container">
+            <div class="home-text">
+                <h1>Hi , I'm<br><span>Amr Nasser</span></h1>
+                <p>A Passionate Software Engineer & Android Developer</p>
+
+                <div class="social-icons">
+                    <a target="_blank" title="Send an email" href="mailto:amr931111@gmail.com"><i
+                            class="fa-regular fa-envelope"></i></a>
+                    <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/amr-nasser"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" title="GitHub" href="https://github.com/AmrNasserSaad"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <a href="#portfolio" class="btn cta-btn">
+                Discover My Projects<i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <div class="stars"></div>
+        </div>
+    </section>
+
+
+
+    <!-- --------about----------- -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I’m a Passionate Android Developer with 1+ year of experience in Kotlin, specializing in UI/UX,
+                         API integration, and cross-device optimization. Dedicated to building clean,
+                          high-performance apps with a user-first approach. Strong problem-solver focused on efficient, maintainable code.
+                         Eager to contribute my skills and grow in innovative teams. Committed to crafting apps that deliver impact.
+                        </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">Skills</p>
+                        <p class="tab-links">Experience</p>
+                        <p class="tab-links">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Kotlin, Java, C++, C#</li>
+                            <li><span>Mobile Development</span><br>Android SDK, Jetpack Compose, Firebase, Clean
+                                Architecture, MVVM, Dependency Injection, Kotlin Coroutines, Retrofit, Room, Design patterns</li>
+                            <li><span>Tools & IDEs</span><br>Android Studio, Git & GitHub, IntelliJ IDEA, VS Code,
+                                Postman, Figma</li>
+                            <li><span>Soft Skills</span><br>Teamwork, Communication, Work under pressure, Adaptability,
+                                Leadership, Problem-Solving</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Nov 2024 - Current</span><br> Junoir Android Developer | Raq App </li>
+                            <li><span>Sep 2024 - Nov 2024</span><br> Intern Android Developer | Apps Square Company</li>
+                            <li><span>Jul 2024 - Aug 2024</span><br> Intern Android Developer | Banque Misr</li>
+                            <li><span>Apr 2024 - Oct 2024</span><br> Mobile App Developmer | Digital Egypt Pioneers Initiative (DEPI)</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sep 2021 - Jun 2025</span><br>Mansoura University<br>B.Sc degree in Computer
+                                Science and Information Technology with Very Good .</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- --------portfolio----------- -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/projects/raq.png">
+                    <div class="layer">
+                        <h3>RAQ APP </h3>
+                        <p>An AI-powered specialized application for facial nerve (Bell's palsy) Rehabilitation.</p>
+                        <a target="_blank" href="https://www.linkedin.com/company/raq-app/posts/?feedView=all"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/speedo.png">
+                    <div class="layer">
+                        <h3>Speedo Transfer</h3>
+                        <p>A Secure banking app for balance checking,
+                             money transfers, and transactions.
+                        </p>
+                        <a target="_blank" href="https://github.com/youssefelfeky1/Speedo_Transfer"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/hive.png">
+                    <div class="layer">
+                        <h3>Hive App</h3>
+                        <p>An application for finding and renting workspaces and
+                            provide feedback.</p>
+                        <a target="_blank"
+                            href="https://github.com/AmrNasserSaad/Sharespace_APP_DEPI"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/news.png">
+                    <div class="layer">
+                        <h3>Kabar </h3>
+                        <p>News App for personalized feeds, and offline reading informed anytime.</p>
+                        <a target="_blank"
+                            href="https://github.com/AmrNasserSaad/NewsApp"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/Offer Screen.png">
+                    <div class="layer">
+                        <h3>Keline </h3>
+                        <p>e commerce App for shopping, and offline buying products anytime.</p>
+                        <a target="_blank"
+                            href="https://github.com/AmrNasserSaad/KelineYt"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="btn-container">
+                <button class="btn see-more">See More<i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- --------contact----------- -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="btn submit" disabled>
+                        <span class="submit-text">Submit</span>
+                        <div class="spinner"><i class="fa-solid fa-spinner"></i></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- --------copy right----------- -->
+    <footer>
+        <p class="copyright">Copyright &copy; <a href="https://www.linkedin.com/in/amr-nasser" target="_blank">Amr
+                Nasser</a> 2025. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <!-- --------scripts----------- -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
